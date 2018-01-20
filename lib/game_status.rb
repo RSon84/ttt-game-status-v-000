@@ -30,8 +30,8 @@ def full?(board)
   !board.any? { |location| location == " " }
 end
 
-Def draw?(board)
-  If !won?(board) && full?(board)
+def draw?(board)
+  if !won?(board) && full?(board)
     return true
   elsif !full?(board) && !won?(board)
     return false
